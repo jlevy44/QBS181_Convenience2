@@ -1,0 +1,20 @@
+---
+title: "convenience_test"
+author: "Joshua Levy"
+date: "10/11/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(conveniencefunctions2)
+```
+
+```{r}
+data <- data.frame(a=1:4,b=c("a","b","c","d"),c=c(NA,"keep",NA,"keep"))
+completeFun(data, c("c"))
+```
+
